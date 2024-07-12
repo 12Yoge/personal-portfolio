@@ -1,11 +1,15 @@
-import Header from "components/Header/index";
-import React from "react";
+import Header from "components/Header";
+
+import Banner from "containers/Home/Banner";
+
+import "containers/Home/home.scss";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <Banner />
+    </>
   );
 };
 

@@ -1,0 +1,46 @@
+@import "styles/variables.scss";
+
+.header {
+  background: $color-white-0;
+  padding: 12px 0;
+  position: sticky;
+
+  &Container {
+    @include d-flex(space-between, center);
+  }
+
+  &Logo {
+    @include d-flex(space-between, center);
+    gap: 24px;
+
+    span {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      @include font-style(1.8rem, 700, 140%);
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid rgb(215, 212, 212);
+      cursor: pointer;
+    }
+
+    ul {
+      @include d-flex();
+      gap: 60px;
+
+      li {
+        font-size: 1.6rem;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        transition: color 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+}

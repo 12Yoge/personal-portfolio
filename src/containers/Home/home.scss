@@ -1,0 +1,58 @@
+@import "styles/variables.scss";
+
+.banner {
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url("../../assets/images/common-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  height: calc(100vh - 84px);
+  @include d-flex(center, center);
+
+  .container {
+    @include d-flex(center, center);
+    flex-direction: column;
+  }
+
+  &Name {
+    h1 {
+      @include font-style(6rem, 800, 140%);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: $color-black-1;
+    }
+
+    p {
+      color: $color-grey-0;
+      @include font-style(2.2rem, 500, 1.6);
+      max-width: 755px;
+      text-align: center;
+      margin: 3rem auto 3rem auto;
+      opacity: 0.7;
+    }
+  }
+
+  &Btn {
+    cursor: pointer;
+    padding: 1.5rem 0;
+    max-width: 200px;
+    text-align: center;
+    width: 100%;
+    @include font-style(2rem, 700, 140%);
+    background: $color-blue-0;
+    color: $color-white-0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: translateY(-1.1rem);
+    }
+  }
+}
