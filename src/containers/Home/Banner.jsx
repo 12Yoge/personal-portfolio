@@ -1,4 +1,6 @@
-import React from "react";
+import { Link } from "react-router-dom";
+
+import { socialLinks } from "constants/header";
 
 const Banner = () => {
   return (
@@ -12,6 +14,20 @@ const Banner = () => {
           </p>
         </div>
         <div className="bannerBtn">Projects</div>
+      </div>
+
+      <ul className="socialIcons">
+        {socialLinks.map((item, index) => (
+          <li className="socialIconsList" key={index}>
+            <Link to={item?.linkTo} target="_blank">
+              <img src={item?.image} alt="socialIcons" />
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      <div class="bannerScroll">
+        <div class="bannerScrollMouse"></div>
       </div>
     </section>
   );

@@ -12,6 +12,8 @@
   background-size: cover;
   height: calc(100vh - 84px);
   @include d-flex(center, center);
+  flex-direction: column;
+  position: relative;
 
   .container {
     @include d-flex(center, center);
@@ -54,5 +56,60 @@
     &:hover {
       transform: translateY(-1.1rem);
     }
+  }
+
+  .socialIcons {
+    position: absolute;
+    left: 0;
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &List {
+      cursor: pointer;
+      padding: 6px;
+    }
+  }
+
+  &Scroll {
+    position: absolute;
+    bottom: 3%;
+
+    &Mouse {
+      width: 25px;
+      height: 40px;
+      border: 2px solid #333;
+      border-radius: 60px;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        top: 7px;
+        right: 8px;
+        background-color: #333;
+        border-radius: 50%;
+        opacity: 1;
+        animation: wheel 1.3s infinite;
+        -webkit-animation: wheel 1.3s infinite;
+      }
+    }
+  }
+}
+
+@keyframes wheel {
+  0% {
+    top: 7px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 30px;
+    opacity: 0;
   }
 }
