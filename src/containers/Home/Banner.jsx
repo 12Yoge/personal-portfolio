@@ -26,8 +26,8 @@ const Banner = () => {
         ))}
       </ul>
 
-      <div class="bannerScroll">
-        <div class="bannerScrollMouse"></div>
+      <div className="bannerScroll">
+        <div className="bannerScrollMouse"></div>
       </div>
     </section>
   );

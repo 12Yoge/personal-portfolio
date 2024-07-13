@@ -3,7 +3,9 @@
 .header {
   background: $color-white-0;
   padding: 12px 0;
-  position: sticky;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
 
   &Container {
     @include d-flex(space-between, center);
