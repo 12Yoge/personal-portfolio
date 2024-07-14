@@ -12,16 +12,20 @@ import Instagram from "assets/images/socialIcons/instagram.svg";
 
 export const HeaderLinks = [
   {
-    name: "Home"
+    name: "Home",
+    id: "banner"
   },
   {
-    name: "About"
+    name: "About",
+    id: "about"
   },
   {
-    name: "Projects"
+    name: "Projects",
+    id: "project"
   },
   {
-    name: "Contact"
+    name: "Contact",
+    id: "contact"
   }
 ];
 

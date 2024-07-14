@@ -1,9 +1,14 @@
 import React from "react";
+import { scrollToSection } from "utils/scrollBehaviour";
 
 import "components/About/about.scss";
 import { mySkills } from "constants/header";
 
 const About = () => {
+  const handleScroll = () => {
+    scrollToSection("contact");
+  };
+
   return (
     <section className="commonSection aboutUs" id="about">
       <div className="container">
@@ -45,7 +50,9 @@ const About = () => {
               me.
             </p>
 
-            <div className="commonButton">Contact Us</div>
+            <div className="commonButton" onClick={handleScroll}>
+              Contact Us
+            </div>
           </div>
           <div className="aboutUsMySkills">
             <h2>My Skills</h2>

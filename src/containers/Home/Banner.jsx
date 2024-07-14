@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 
 import { socialLinks } from "constants/header";
+import { scrollToSection } from "utils/scrollBehaviour";
 
 const Banner = () => {
+  const handleScroll = () => {
+    scrollToSection("project");
+  };
   return (
     <section className="banner" id="banner">
       <div className="container">
@@ -13,7 +17,9 @@ const Banner = () => {
             Web Applications that leads to the success of the overall product
           </p>
         </div>
-        <div className="commonButton">Projects</div>
+        <div className="commonButton" onClick={handleScroll}>
+          Projects
+        </div>
       </div>
 
       <ul className="socialIcons">
