@@ -51,4 +51,11 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    &MyData {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
 }

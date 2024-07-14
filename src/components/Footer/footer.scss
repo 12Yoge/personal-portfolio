@@ -45,6 +45,16 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    padding: 0 0 65px 0;
+
+    &Data {
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .copyRights {
