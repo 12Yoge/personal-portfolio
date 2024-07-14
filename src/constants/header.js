@@ -37,3 +37,51 @@ export const socialLinks = [
     image: InstagramLogo
   }
 ];
+
+export const mySkills = [
+  {
+    name: "HTML"
+  },
+  {
+    name: "CSS"
+  },
+  {
+    name: "SASS"
+  },
+  {
+    name: "GIT"
+  },
+  {
+    name: "GitHub"
+  },
+  {
+    name: "GitLab"
+  },
+  {
+    name: "BitBucket"
+  },
+  {
+    name: "SEO"
+  },
+  {
+    name: "Terminal"
+  },
+  {
+    name: "Responsive Design"
+  },
+  {
+    name: "JavaScript"
+  },
+  {
+    name: "ReactJs"
+  },
+  {
+    name: "Email Js"
+  },
+  {
+    name: "Wordpress-api"
+  },
+  {
+    name: "Webflow"
+  }
+];

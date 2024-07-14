@@ -13,7 +13,7 @@ const Banner = () => {
             Web Applications that leads to the success of the overall product
           </p>
         </div>
-        <div className="bannerBtn">Projects</div>
+        <div className="commonButton">Projects</div>
       </div>
 
       <ul className="socialIcons">

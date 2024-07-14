@@ -1,4 +1,6 @@
+import About from "components/About/index";
 import Header from "components/Header";
+import Projects from "components/Projects/index";
 
 import Banner from "containers/Home/Banner";
 
@@ -9,8 +11,8 @@ const Home = () => {
     <>
       <Header />
       <Banner />
-      <Banner />
-      <Banner />
+      <About />
+      <Projects />
     </>
   );
 };

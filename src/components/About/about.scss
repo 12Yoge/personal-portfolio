@@ -1,0 +1,78 @@
+@import "styles/variables.scss";
+
+.aboutUs {
+  position: relative;
+  background: #fafafa;
+
+  .commonHeading {
+    position: relative;
+
+    h1 {
+      &::after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 3rem;
+        background: #7843e9;
+        left: 49%;
+        top: 66px;
+        border-radius: 5px;
+        opacity: 0.5;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &MyData {
+    @include d-flex(flex-start, flex-start);
+    gap: 100px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &ToKnow {
+    width: 100%;
+
+    p {
+      font-size: 1.8rem;
+      color: #666;
+      max-width: 60rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &MySkills {
+    width: 100%;
+
+    ul {
+      @include d-flex();
+      flex-wrap: wrap;
+      row-gap: 15px;
+      column-gap: 15px;
+
+      li {
+        font-size: 1.6rem;
+        background: rgba(153, 153, 153, 0.2);
+        border-radius: 5px;
+        font-weight: 600;
+        color: #666;
+        padding: 10px 12px;
+        width: fit-content;
+      }
+    }
+  }
+}
