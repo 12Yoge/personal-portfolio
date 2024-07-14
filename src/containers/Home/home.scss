@@ -22,6 +22,8 @@
   }
 
   &Name {
+    text-align: center;
+
     h1 {
       @include font-style(6rem, 800, 140%);
       text-transform: uppercase;
@@ -80,6 +82,34 @@
         animation: wheel 1.3s infinite;
         -webkit-animation: wheel 1.3s infinite;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &Name {
+      text-align: center;
+
+      h1 {
+        @include font-style(40px, 700, 120%);
+        text-transform: none;
+        letter-spacing: 1px;
+      }
+
+      p {
+        font-size: 18px;
+        max-width: 100%;
+        opacity: 0.6;
+      }
+    }
+
+    .socialIcons {
+      bottom: 0;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-evenly;
+      gap: 0;
+      position: fixed;
+      z-index: 9;
     }
   }
 }

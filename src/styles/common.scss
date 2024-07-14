@@ -110,4 +110,23 @@ li {
   .commonSection {
     padding: 40px 0;
   }
+
+  .commonHeading {
+    flex-direction: column;
+    gap: 30px;
+
+    h1 {
+      @include font-style(3rem, 700, 140%);
+      letter-spacing: 0px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    p {
+      @include font-style(1.6rem, 500, 1.6);
+      max-width: 100%;
+    }
+  }
 }

@@ -23,6 +23,12 @@
       @include d-flex(end);
     }
   }
+
+  @media (max-width: 768px) {
+    &Form {
+      padding: 20px;
+    }
+  }
 }
 
 textarea {
