@@ -8,7 +8,6 @@ import useScreenMobile from "hooks/useScreenMobile";
 
 import myImage from "assets/images/professional.jpeg";
 import hamburger from "assets/images/hamburger.svg";
-import hamburgerClose from "assets/images/closeImg.svg";
 
 import "components/Header/header.scss";
 
@@ -72,11 +71,7 @@ const Header = () => {
             </ul>
           )}
           {isMobile && (
-            <img
-              src={isMenuOpen ? hamburgerClose : hamburger}
-              onClick={toggleMenu}
-              alt="mobileResponsive"
-            />
+            <img src={hamburger} onClick={toggleMenu} alt="mobileResponsive" />
           )}
         </div>
       </div>
