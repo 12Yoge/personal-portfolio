@@ -1,0 +1,57 @@
+@import "styles/variables.scss";
+
+.footer {
+  background: $color-black-1;
+
+  &Data {
+    @include d-flex(space-between);
+
+    &Name {
+      max-width: 480px;
+
+      h2 {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+
+      p {
+        margin-top: 20px;
+        color: #eee;
+        font-size: 15px;
+        line-height: 1.7;
+      }
+    }
+
+    &Icons {
+      span {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+
+      ul {
+        @include d-flex(flex-start, center);
+        margin-top: 20px;
+        gap: 20px;
+
+        li {
+          img {
+            filter: invert(100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyRights {
+  border-top: 1px solid #444;
+  padding: 40px 0;
+  color: #eee;
+  font-size: 1.2rem;
+  text-align: left;
+  text-align: center;
+}

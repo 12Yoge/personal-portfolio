@@ -1,11 +1,18 @@
 $color-white-0: #ffffff;
+$color-white-1: #f7f8f9;
 
 $color-black-0: #000000;
 $color-black-1: #111;
 
 $color-grey-0: #333;
+$color-grey-1: #666;
+$color-grey-2: #e8ecf4;
+$color-grey-3: #aaaaac;
 
 $color-blue-0: #7843e9;
+$color-blue-1: #27aaf8;
+
+$color-red-0: #f04438;
 
 // Flex mixin
 @mixin d-flex($jc: flex-start, $al: flex-start) {

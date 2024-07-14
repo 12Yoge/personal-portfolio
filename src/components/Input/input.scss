@@ -1,0 +1,51 @@
+@import "styles/variables.scss";
+
+.input {
+  border-radius: 5px;
+  border: 1px solid $color-grey-2;
+  background: $color-white-1;
+  width: 100%;
+  padding: 18px 20px;
+  color: $color-black-1;
+  @include font-style(1.6rem, 400, 125%);
+  margin-bottom: 40px;
+
+  &::placeholder {
+    color: $color-grey-3;
+    @include font-style(1.6rem, 400, 125%);
+  }
+
+  &:focus {
+    border-radius: 5px;
+    border: 1px solid $color-blue-1;
+    outline: none;
+    box-shadow: 0px 0px 8px 0px rgba(39, 170, 248, 0.24);
+  }
+}
+
+label {
+  color: #666;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: left;
+}
+
+input[type="number"] {
+  appearance: textField;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error {
+  border: 1px solid $color-red-0;
+  background: $color-white-1;
+  box-shadow: 0px 0px 8px 0px rgba(240, 68, 56, 0.24);
+}

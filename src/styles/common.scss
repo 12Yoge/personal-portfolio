@@ -47,6 +47,25 @@ li {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #111;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      width: 3rem;
+      background: #7843e9;
+      left: 49%;
+      top: 66px;
+      border-radius: 5px;
+      opacity: 0.5;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
   }
 
   p {

@@ -1,4 +1,6 @@
 import About from "components/About/index";
+import ContactUs from "components/ContactUs/index";
+import Footer from "components/Footer/index";
 import Header from "components/Header";
 import Projects from "components/Projects/index";
 
@@ -13,6 +15,8 @@ const Home = () => {
       <Banner />
       <About />
       <Projects />
+      <ContactUs />
+      <Footer />
     </>
   );
 };

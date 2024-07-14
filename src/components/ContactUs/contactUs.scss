@@ -1,0 +1,49 @@
+@import "styles/variables.scss";
+
+.contact {
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url("../../assets/images/common-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+
+  &Form {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: $color-white-0;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    &Button {
+      @include d-flex(end);
+    }
+  }
+}
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid $color-grey-2;
+  background: $color-white-1;
+  width: 100%;
+  padding: 18px 20px;
+  color: $color-black-1;
+  @include font-style(1.6rem, 400, 125%);
+  margin-bottom: 40px;
+
+  &::placeholder {
+    color: $color-grey-3;
+    @include font-style(1.6rem, 400, 125%);
+  }
+
+  &:focus {
+    border-radius: 5px;
+    border: 1px solid $color-blue-1;
+    outline: none;
+    box-shadow: 0px 0px 8px 0px rgba(39, 170, 248, 0.24);
+  }
+}

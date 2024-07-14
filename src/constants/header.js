@@ -1,7 +1,14 @@
+// link
 import linkedInLogo from "assets/images/svg/icons8-linkedin-logo.svg";
 import githubLogo from "assets/images/svg/icons8-github.svg";
 import youTubeLogo from "assets/images/svg/icons8-youtube-logo.svg";
 import InstagramLogo from "assets/images/svg/icons8-instagram-logo.svg";
+
+// footerIcons
+import linkedIn from "assets/images/socialIcons/linkedin.svg";
+import github from "assets/images/socialIcons/github.svg";
+import youTube from "assets/images/socialIcons/youtube.svg";
+import Instagram from "assets/images/socialIcons/instagram.svg";
 
 export const HeaderLinks = [
   {
@@ -83,5 +90,25 @@ export const mySkills = [
   },
   {
     name: "Webflow"
+  }
+];
+
+export const socialFooterLinks = [
+  {
+    linkTo: "https://www.linkedin.com/in/yogesh-s-303b0b203",
+    image: linkedIn
+  },
+  {
+    linkTo: "https://www.youtube.com/@UnboxCoders",
+    image: youTube
+  },
+  {
+    linkTo: "https://github.com/12Yoge",
+    image: github
+  },
+  {
+    linkTo:
+      "https://www.instagram.com/dev.innovative?utm_source=qr&igsh=MWF5aDg4NTNlb3A4dA==",
+    image: Instagram
   }
 ];
