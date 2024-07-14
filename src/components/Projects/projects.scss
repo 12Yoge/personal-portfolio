@@ -1,1 +1,117 @@
 @import "styles/variables.scss";
+
+.projects {
+  &List {
+    @include d-flex();
+    column-gap: 32px;
+    row-gap: 32px;
+    flex-wrap: wrap;
+
+    &Card {
+      background: #fff;
+      border: 1px solid #f0f0f0;
+      border-radius: 8px;
+      box-shadow: 3px 3px 40px 0 rgba(0, 0, 0, 0.04);
+      cursor: pointer;
+      max-width: 378px;
+      width: 100%;
+
+      &Img {
+        object-fit: contain;
+        overflow: hidden;
+
+        img {
+          min-height: 200px;
+          border-radius: 8px 8px 0 0;
+          transition: all 0.5s ease;
+          display: block;
+          height: auto;
+          object-fit: cover;
+          transition: all 0.5s ease;
+          width: 100%;
+
+          &:hover {
+            scale: 0.9;
+          }
+        }
+      }
+
+      &Contents {
+        position: relative;
+        padding: 16px;
+        background: #fafafa;
+        border-top: 1px solid #cbcbcb;
+
+        img {
+          width: 30px;
+          height: 40px;
+          position: absolute;
+          top: 22px;
+          cursor: pointer;
+          right: 30px;
+          transition: all 0.5s ease;
+          transform: rotate(45deg);
+
+          &:hover {
+            scale: 1.1;
+          }
+        }
+
+        p {
+          color: #222529;
+          flex-grow: 1;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 160%;
+          max-width: 250px;
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        span {
+          color: #e54696;
+          display: block;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 150%;
+          padding-bottom: 8px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &ViewMore {
+    text-align: center;
+    cursor: pointer;
+    margin: 40px 0 0 0;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+      90deg,
+      #131d56 -1.66%,
+      #33145d 26.58%,
+      #63166a 53.17%,
+      #a4267b 72.03%,
+      #db327c 87.36%,
+      #eb4b46 103.24%
+    );
+    background: var(
+      --G-4,
+      linear-gradient(
+        90deg,
+        #131d56 -1.66%,
+        #33145d 26.58%,
+        #63166a 53.17%,
+        #a4267b 72.03%,
+        #db327c 87.36%,
+        #eb4b46 103.24%
+      )
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}

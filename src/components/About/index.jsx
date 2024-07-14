@@ -5,7 +5,7 @@ import { mySkills } from "constants/header";
 
 const About = () => {
   return (
-    <section className="commonSection aboutUs">
+    <section className="commonSection aboutUs" id="about">
       <div className="container">
         <div className="commonHeading">
           <h1>About Me</h1>

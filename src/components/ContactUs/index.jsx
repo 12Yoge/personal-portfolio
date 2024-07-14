@@ -3,7 +3,7 @@ import Input from "components/Input";
 
 const ContactUs = () => {
   return (
-    <section className="commonSection contact">
+    <section className="commonSection contact" id="contact">
       <div className="container">
         <div className="commonHeading">
           <h1>Contact</h1>

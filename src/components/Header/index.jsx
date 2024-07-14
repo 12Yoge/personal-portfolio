@@ -7,7 +7,7 @@ import { HeaderLinks } from "constants/header";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header" id="header">
       <div className="container headerContainer">
         <div className="headerLogo">
           <img src={myImage} alt="professionalImage" />

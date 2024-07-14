@@ -4,7 +4,7 @@ import { socialLinks } from "constants/header";
 
 const Banner = () => {
   return (
-    <section className="banner">
+    <section className="banner" id="banner">
       <div className="container">
         <div className="bannerName">
           <h1>Hey, I'm Yogesh Senthilkumar</h1>

@@ -5,7 +5,7 @@ import { socialFooterLinks } from "constants/header";
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" id="footer">
         <div className="commonSection">
           <div className="container">
             <div className="footerData">
